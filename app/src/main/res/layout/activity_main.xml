@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Membaca dan Menyimpan data pada SD Card"
+                android:textSize="25dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:text="oleh : PMO 2 Kelompok 4 (TI 16 B)"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:text="Contoh 1 : Menyimpan file .txt"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:id="@+id/et_isi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="isi dari text yang akan disimpan"/>
+            <EditText
+                android:id="@+id/et_namaFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Nama File (Tidak Boleh Kosong)"/>
+            <Button
+                android:id="@+id/btn_simpanTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Simpan FILE TXT"
+                android:textColor="#FFFFFF"
+                android:fontFamily="monospace"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:text="Contoh 2 : Membaca file .txt"
+                android:textColor="@color/colorPrimary"/>
+            <Button
+                android:id="@+id/btn_bacaTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="BACA FILE TXT"
+                android:textColor="#FFFFFF"
+                android:fontFamily="monospace"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="18dp"
+                android:text="Hasil : "
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/tv_hasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="18dp"
+                android:text="Tulisan ini nanti di ganti dengan hasil baca file txt nya"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
